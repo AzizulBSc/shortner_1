@@ -2,29 +2,34 @@
 
 Follow these steps to set up the project:
 
-1. Copy the `.env.example` file to create a new `.env` file:
+1. Run cmd in root directory:
 
-    ```bash
-    cp .env.example .env
-    ```
+   ```bash
+   composer install
+   ```
+2. Copy the `.env.example` file to create a new `.env` file:
 
-2. Generate the application key:
+   ```bash
+   cp .env.example .env
+   ```
 
-    ```bash
-    php artisan key:generate
-    ```
+3. Generate the application key:
 
-3. Run database migrations & Seedeer:
+   ```bash
+   php artisan key:generate
+   ```
 
-    ```bash
-    php artisan migrate:refresh --seed
-    ```
+4. Run database migrations & Seedeer:
 
-4. Start the development server:
+   ```bash
+   php artisan migrate:refresh --seed
+   ```
 
-    ```bash
-    php artisan serve
-    ```
+5. Start the development server:
+
+   ```bash
+   php artisan serve
+   ```
 
 
 ## User Credentials for Login
@@ -40,5 +45,6 @@ Use the following credentials for login in:
 - **Password:** 12345678
 
 
-## API details 
+## API details
 api collection available in root directory(Url_Shortner.postman_collection.json) where contain login api and url shortener api
+````
