@@ -41,4 +41,4 @@ Use the following credentials for login in:
 
 
 ## API details 
-api collection available in root directory(url_shortener_api.json) where contain login api and url shortener api
+api collection available in root directory(Url_Shortner.postman_collection.json) where contain login api and url shortener api
