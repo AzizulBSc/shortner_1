@@ -11,22 +11,31 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
 				"url": {
-					"raw": "{{base_url}}/login?email=azizulh8774@gmail.com&password=123456",
+					"raw": "127.0.0.1:8000/api/login?email=user1@email.com&password=12345678",
 					"host": [
-						"{{base_url}}"
+						"127",
+						"0",
+						"0",
+						"1"
 					],
+					"port": "8000",
 					"path": [
+						"api",
 						"login"
 					],
 					"query": [
 						{
 							"key": "email",
-							"value": "azizulh8774@gmail.com"
+							"value": "user1@email.com"
 						},
 						{
 							"key": "password",
-							"value": "123456"
+							"value": "12345678"
 						}
 					]
 				}
