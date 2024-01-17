@@ -31,7 +31,7 @@ class UrlController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'original_url' => 'required|string|max:255',
+            'original_url' => 'required|active_url',
         ]);
         $data = $request->all();
         $data['user_id'] = auth()->id();
@@ -68,7 +68,7 @@ class UrlController extends Controller
     public function update(Request $request, Url $url)
     {
         $request->validate([
-            'original_url' => 'required|string|max:255',
+            'original_url' => 'required|active_url',
         ]);
         $url->original_url = $request->original_url;
         $url->short_url = Str::random(5);

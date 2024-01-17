@@ -1,0 +1,61 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "url_shortener",
+    "dateExported": "2024-01-17T12:58:04.859Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "eb66fe54-b0a2-4056-8953-1d810322d2d0",
+            "colId": "d7bc87c0-3086-4ee6-b617-3620f249e8c3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/api/urls",
+            "url": "http://127.0.0.1:8000/api/urls",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-17T12:57:45.048Z",
+            "modified": "2024-01-17T12:57:45.048Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "original_url",
+                        "value": "https3://docs.google.com/document/d/1mGxhYHUzLQLWTF5zArbL5d6ZWvSOQ9ExEctpUPfZqAQ/edit"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "2|wZqwOLmmRhqFTpvJm2ldRnLFkoRKeCmukmh01cHU57acf5da"
+            },
+            "tests": []
+        },
+        {
+            "_id": "059ae6d2-f138-4129-9413-9f455722fe79",
+            "colId": "d7bc87c0-3086-4ee6-b617-3620f249e8c3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/api/login",
+            "url": "http://127.0.0.1:8000/api/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-17T12:57:52.089Z",
+            "modified": "2024-01-17T12:57:52.089Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"user1@email.com\",\n  \"password\":\"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
